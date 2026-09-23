@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="TrackIt.Application/TrackIt.Application.csproj" />
+  <Project Path="TrackIt.Domain/TrackIt.Domain.csproj" />
+  <Project Path="TrackIt.Infrastructure/TrackIt.Infrastructure.csproj" />
+  <Project Path="TrackIt/TrackIt.Api.csproj" />
+</Solution>
