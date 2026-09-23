@@ -5,10 +5,10 @@ namespace TrackIt.Application.Services
 {
     public interface IIssueService
     {
-        Task<List<Issue>> GetAllAsync();
-        Task<Issue> AddAsync(CreateIssueRequest request);
-        Task<Issue?> GetAsync(int id);
-        Task<Issue?> UpdateAsync(int id, UpdateIssueRequest request);
-        Task<bool> DeleteAsync(int id);
+        Task<List<IssueResponse>> GetAllAsync();
+        Task<IssueResponse> AddAsync(CreateIssueRequest request);
+        Task<IssueResponse?> GetAsync(int id);
+        Task<IssueResponse?> UpdateAsync(int id, UpdateIssueRequest request);
+        Task<bool> DeleteAsync(int id); 
     }
 }

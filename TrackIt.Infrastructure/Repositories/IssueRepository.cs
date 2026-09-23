@@ -31,7 +31,11 @@ namespace TrackIt.Infrastructure.Repositories
 
         public async Task<Issue?> GetAsync(int id)
         {
-            return await _context.Issues.FindAsync(id);
+            return await _context.Issues
+                .Include(i => i.Reporter)
+                .Include(i => i.Assignee)
+                .Include(i => i.Project)
+                .FirstOrDefaultAsync(i => i.Id == id);
         }
 
         public async Task<Issue> UpdateAsync(Issue issue)

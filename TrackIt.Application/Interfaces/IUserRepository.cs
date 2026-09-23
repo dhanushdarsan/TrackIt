@@ -6,5 +6,6 @@ namespace TrackIt.Application.Interfaces
     {
         Task<User?> GetByEmailAsync(string email);
         Task<User> AddAsync(User user);
+        Task<User?> GetAsync(int id);
     }
 }

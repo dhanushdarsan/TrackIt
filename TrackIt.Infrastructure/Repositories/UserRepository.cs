@@ -29,5 +29,10 @@ namespace TrackIt.Infrastructure.Repositories
             await _context.SaveChangesAsync();
             return user;
         }
+
+        public async Task<User?> GetAsync(int id)
+        {
+            return await _context.Users.FindAsync(id);
+        }
     }
 }
