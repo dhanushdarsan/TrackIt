@@ -52,6 +52,5 @@ namespace TrackIt.Infrastructure.Repositories
             await _context.SaveChangesAsync();
             return true;
         }
-
     }
 }
